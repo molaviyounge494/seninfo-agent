@@ -81,4 +81,5 @@ PYTHONPATH=src:tests python3 tests/run_all.py
 ## 文档
 
 - **用户教程(统一版,含 C/C++/Python/Java LSP 部署)**:`docs/tutorial-user.md`
+- 开发与协作说明:`CONTRIBUTING.md`
 - 验收用例:`docs/acceptance-cases.md` ｜ 架构与模块设计:`docs/design-phase1.md` ｜ PRD:`docs/prd-v2.md` ｜ 真实环境验收:`docs/runbook-phase1-validation.md`
