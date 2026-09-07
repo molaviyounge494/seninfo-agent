@@ -1,0 +1,5 @@
+{"SourceMetadata": {"Data": {"Github": {"file": "src/secrets_prod.py", "line": 5}}}, "DetectorName": "AWS", "Raw": "AKIAIOSFODNN7EXAMPLE", "Verified": true}
+{"SourceMetadata": {"Data": {"Git": {"file": "README.md", "line": 12}}}, "DetectorName": "Generic", "Raw": "sk-test-your_token_here-abc", "Verified": false}
+{"SourceMetadata": {"Data": {"Git": {"file": "tests/fixtures/api_keys.json", "line": 3}}}, "DetectorName": "Generic", "Raw": "dummy-token-1234", "Verified": false}
+{"SourceMetadata": {"Data": {"Filesystem": {"file": "services/db.py", "line": 22}}}, "DetectorName": "PrivateKey", "Raw": "-----BEGIN OPENSSH PRIVATE KEY----- MIIEvQIBADANBgkqhkiG9w0BAQEFA", "Verified": false}
+this line is not valid json

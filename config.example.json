@@ -1,0 +1,22 @@
+{
+  "model": {
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "api_key_env": null,
+    "judge_model": "deepseek-chat",
+    "critic_model": null,
+    "temperature": 0.0,
+    "timeout_s": 30.0
+  },
+  "budget": {
+    "tool_rounds": 5,
+    "context_tokens": 8000,
+    "read_radius": 30,
+    "search_limit": 50,
+    "max_file_bytes": 1000000,
+    "reconsider_rounds": 1,
+    "schema_retries": 2,
+    "workers": 4
+  },
+  "rules_file": null,
+  "workspace": null
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Test / tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 本地个人配置(勿提交; 模板用 config.example.json)
+config.json
+
+# 扫描产物(默认输出到 /tmp, 这里兜底)
+*.manifest.json
+report*.jsonl

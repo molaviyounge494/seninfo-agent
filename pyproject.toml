@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seninfo-agent"
+version = "0.1.0"
+description = "Sensitive-information triage agent: deterministic fast-path + contextual deep judgement for scanner findings"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+# Phase 1 骨架刻意零运行时依赖(纯标准库,便于离线 CI 内嵌与验证)。
+# 服务化(Phase 2)将引入 pydantic / fastapi;结果 Schema 届时可平滑迁移。
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+# Phase 2 起:REST 服务 = ["fastapi", "uvicorn", "pydantic>=2", "httpx"]
+# Phase 1.2(深度链路)= ["openai"] 或内部网关 SDK,按部署形态选配
+
+[project.scripts]
+seninfo-agent = "seninfo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

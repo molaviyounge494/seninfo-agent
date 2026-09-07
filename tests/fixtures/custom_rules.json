@@ -1,0 +1,9 @@
+[
+  {
+    "id": "org-env-template",
+    "kind": "path_glob",
+    "patterns": ["**/.env.template", ".env.template", "**/*.dist"],
+    "category": "DOCUMENTATION",
+    "reason": "组织模板文件(覆盖示例): 演示项目级规则覆盖内置规则"
+  }
+]

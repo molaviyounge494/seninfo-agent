@@ -1,0 +1,18 @@
+[
+  {
+    "RuleID": "generic-api-key",
+    "Description": "Detected a Generic API Key",
+    "File": "src/notifications.py",
+    "StartLine": 88,
+    "Secret": "sk-prod-9f8a7b6c5d4e3f2a1b0c",
+    "Match": "api_key = \"sk-prod-9f8a7b6c5d4e3f2a1b0c\""
+  },
+  {
+    "RuleID": "aws-access-token",
+    "Description": "AWS",
+    "File": "docs/aws-example.md",
+    "StartLine": 7,
+    "Secret": "AKIAyour_token_here999",
+    "Match": "AKIAyour_token_here999"
+  }
+]

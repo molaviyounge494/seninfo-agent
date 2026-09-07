@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "gitleaks",
+          "version": "8.18.4",
+          "rules": [
+            {
+              "id": "slack-access-token",
+              "name": "slack-access-token",
+              "shortDescription": {"text": "Slack"}
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "slack-access-token",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {"text": "Secret detected in config/slack.yaml"},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {"uri": "config/slack.yaml"},
+                "region": {"startLine": 4}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
